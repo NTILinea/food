@@ -1,1 +1,68 @@
 /* Denna fil skall innehålla din CSS kod */
+* {
+    margin: 0%;
+}
+
+#mainPage {
+height: 200vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 2fr 3fr 3fr 3fr 0.5fr;
+    grid-template-areas:
+    " mh mh "
+    " mi mi "
+    " im im "
+    " im im "
+    " im im "
+    " ft ft ";
+}
+
+#mainHead {
+grid-area:mh;
+display:grid;
+grid-template-columns: 1fr;
+grid-template-rows: 3fr 1fr 1fr 1fr;
+grid-template-areas: 
+" h1 h2 h3 h4";
+
+}
+
+#head1 {
+    background:greenyellow;
+    grid-area: h1;
+}
+#head2 {
+    background:green;
+    grid-area: h2;
+}
+#head3 {
+    background:indianred;
+    grid-area: h3;
+}
+#head4 {
+    background:indigo;
+    grid-area: h4;
+}
+
+#mainImg {
+    background:firebrick;
+    grid-area:mi;
+}
+
+#indexMain{
+    grid-area: im;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding:30px;
+    background:hotpink
+}
+
+#article {
+background:violet;
+}
+
+#foot {
+    grid-area: ft;
+    background:rosybrown;
+}
