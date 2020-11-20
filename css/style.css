@@ -2,7 +2,10 @@
 * {
     margin: 0%;
 }
-
+body {
+    background:cadetblue
+}
+/* strucure for Main/News page */
 #mainPage {
 height: 200vh;
     display: grid;
@@ -16,8 +19,30 @@ height: 200vh;
     " im im im im im "
     " ft ft ft ft ft ";
 }
+/* strucure for Menu Page */
+#MenuPage {
+    height: 200vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 4fr 4fr 4fr 0.5fr;
+    grid-template-areas:
+    " mh mh mh mh mh "
+    " mt mt mt mt mt "
+    " fo fo fo fo fo "
+    " fo fo fo fo fo "
+    " fo fo fo fo fo "
+    " ft ft ft ft ft "
+    ;
+}
 
-#indexHead {
+
+
+/*strucure for about us page*/
+
+
+
+/* in all pages */
+.MainHead {
 
 grid-area:mh;
 display:grid;
@@ -28,25 +53,34 @@ grid-template-areas:
 
 }
 
-#head1 {
+.head1 {
     background:greenyellow;
     grid-area: h1;
 }
-#head2 {
+.newsOption {
     background:green;
     grid-area: h2;
 
 }
-#head3 {
+.menuOption {
     background:indianred;
     grid-area: h3;
  
 }
-#head4 {
+.aboutUsOption {
     background:indigo;
     grid-area: h4;
   
 }
+
+.foot {
+    grid-area: ft;
+    background:rosybrown;
+   
+}
+
+
+/*Main/News Page*/
 
 #indexImg {
     background:firebrick;
@@ -62,12 +96,65 @@ grid-template-areas:
     background:hotpink
 }
 
-.article {
-background:violet;
-margin: 20px;
+.newsArticle {
+    background:violet;
+    margin: 20px;
+    }
+    /*menu Page*/
+    #foodType {
+        grid-area: mt;
+        background:darkviolet
+    }
+
+#foodOptions {
+    grid-area: fo;
+    background:darkblue;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+   
+    grid-gap: 5px;
 }
 
-#foot {
-    grid-area: ft;
-    background:rosybrown;
+.burger {
+background:darkred;
+grid-gap: 5px;
+margin: 5px;
 }
+
+    /* about us page */
+#abouUsPage {
+    height: 200vh;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 3fr 3fr 3fr 3fr 0.5fr;
+        grid-template-areas:
+        " mh mh mh mh mh "
+        " ai ai ai ai ai "
+        " at at at at at "
+        " aa aa aa aa aa "
+        " aa aa aa aa aa "
+        " ft ft ft ft ft ";
+    }
+    #aboutUsImg {
+        grid-area: ai;
+        background:darkviolet;
+    }
+    #aboutUsText {
+        background: cadetblue;
+        grid-area: at;
+    }
+    #aboutUsArticles {
+        grid-area: aa;
+        background:darkslategray;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        
+        grid-gap: 20px;
+        margin: 30px;
+    }
+    .AUArticle {
+        background:forestgreen;
+        
+    }
