@@ -1,9 +1,10 @@
 /* Denna fil skall innehålla din CSS kod */
 * {
     margin: 0%;
+    font-family: 'Courier New';
 }
 body {
-    background:cadetblue
+    background:rgb(243, 235, 220);
 }
 /* strucure for Main/News page */
 #mainPage {
@@ -18,6 +19,7 @@ height: 200vh;
     " im im im im im "
     " im im im im im "
     " ft ft ft ft ft ";
+    
 }
 /* strucure for Menu Page */
 #MenuPage {
@@ -38,8 +40,19 @@ height: 200vh;
 
 
 /*strucure for about us page*/
-
-
+#abouUsPage {
+    height: 200vh;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 3fr 3fr 3fr 3fr 0.5fr;
+        grid-template-areas:
+        " mh mh mh mh mh "
+        " ai ai ai ai ai "
+        " at at at at at "
+        " aa aa aa aa aa "
+        " aa aa aa aa aa "
+        " ft ft ft ft ft ";
+    }
 
 /* in all pages */
 .MainHead {
@@ -54,28 +67,28 @@ grid-template-areas:
 }
 
 .head1 {
-    background:greenyellow;
+    background:#f27563;
     grid-area: h1;
 }
 .newsOption {
-    background:green;
+    background:#f29e63;
     grid-area: h2;
 
 }
 .menuOption {
-    background:indianred;
+    background:#e85f6b;
     grid-area: h3;
  
 }
 .aboutUsOption {
-    background:indigo;
+    background:indianred;
     grid-area: h4;
   
 }
 
 .foot {
     grid-area: ft;
-    background:rosybrown;
+    background:rgb(48, 41, 41);
    
 }
 
@@ -93,11 +106,11 @@ grid-template-areas:
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     padding:30px;
-    background:hotpink
+    background:rgb(243, 235, 220);
 }
 
 .newsArticle {
-    background:violet;
+    background:grey;
     margin: 20px;
     }
     /*menu Page*/
@@ -123,19 +136,7 @@ margin: 5px;
 }
 
     /* about us page */
-#abouUsPage {
-    height: 200vh;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 3fr 3fr 3fr 3fr 0.5fr;
-        grid-template-areas:
-        " mh mh mh mh mh "
-        " ai ai ai ai ai "
-        " at at at at at "
-        " aa aa aa aa aa "
-        " aa aa aa aa aa "
-        " ft ft ft ft ft ";
-    }
+
     #aboutUsImg {
         grid-area: ai;
         background:darkviolet;
@@ -154,7 +155,24 @@ margin: 5px;
         grid-gap: 20px;
         margin: 30px;
     }
-    .AUArticle {
+    .AuArticle {
         background:forestgreen;
         
+    }
+    /*other tags*/
+
+    a {
+        display:flex;
+        justify-content: center;
+        
+        text-decoration: none;
+        color: white;
+    }
+    a:hover {
+        font-size: 30px;
+    }
+    h3 {
+        display: flex;
+        height: 100%;
+        align-items: center;
     }
