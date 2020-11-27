@@ -116,12 +116,12 @@ grid-template-areas:
     /*menu Page*/
     #foodType {
         grid-area: mt;
-        background:darkviolet
+        background:rgb(209, 198, 177)
     }
 
 #foodOptions {
     grid-area: fo;
-    background:darkblue;
+    background:rgb(243, 235, 220);
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
@@ -130,7 +130,7 @@ grid-template-areas:
 }
 
 .burger {
-background:darkred;
+background:grey;
 grid-gap: 5px;
 margin: 5px;
 }
@@ -142,12 +142,12 @@ margin: 5px;
         background:darkviolet;
     }
     #aboutUsText {
-        background: cadetblue;
+        background: rgb(226, 218, 203);
         grid-area: at;
     }
     #aboutUsArticles {
         grid-area: aa;
-        background:darkslategray;
+        background:rgb(243, 235, 220);
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
@@ -156,7 +156,7 @@ margin: 5px;
         margin: 30px;
     }
     .AuArticle {
-        background:forestgreen;
+        background:grey;
         
     }
     /*other tags*/
@@ -175,4 +175,9 @@ margin: 5px;
         display: flex;
         height: 100%;
         align-items: center;
+    }
+    h2 {
+        color: white;
+        text-decoration: underline;
+
     }
