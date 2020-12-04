@@ -8,7 +8,7 @@ body {
 }
 /* strucure for Main/News page */
 #mainPage {
-height: 200vh;
+min-height: 200vh;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 3fr 3fr 3fr 3fr 0.5fr;
@@ -23,7 +23,7 @@ height: 200vh;
 }
 /* strucure for Menu Page */
 #MenuPage {
-    height: 200vh;
+    min-height: 200vh;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 4fr 4fr 4fr 0.5fr;
@@ -41,7 +41,7 @@ height: 200vh;
 
 /*strucure for about us page*/
 #abouUsPage {
-    height: 200vh;
+    min-height: 200vh;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr 3fr 3fr 3fr 3fr 0.5fr;
@@ -56,7 +56,7 @@ height: 200vh;
 
 /* in all pages */
 .MainHead {
-
+max-height: 30vh;
 grid-area:mh;
 display:grid;
 grid-template-columns: 3fr 1fr 1fr 1fr;
@@ -89,14 +89,16 @@ grid-template-areas:
 .foot {
     grid-area: ft;
     background:rgb(48, 41, 41);
-   
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
 /*Main/News Page*/
 
 #indexImg {
-    background:firebrick;
+    background:white;
     grid-area:mi;
 }
 
@@ -110,11 +112,21 @@ grid-template-areas:
 }
 
 .newsArticle {
-    background:grey;
+    background:#eeba59;
     margin: 20px;
+    padding:10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
     }
+    .newsArticle:hover{
+        background:#e79a52;
+    }
+
+
     /*menu Page*/
-    #foodType {
+#foodType {
         grid-area: mt;
         background:rgb(209, 198, 177)
     }
@@ -132,22 +144,25 @@ grid-template-areas:
 }
 
 .burger {
-background:rgb(170, 34, 34);
+background:white;
 grid-gap: 5px;
 margin: 10px;
-
-
 }
+
 
     /* about us page */
 
     #aboutUsImg {
         grid-area: ai;
-        background:darkviolet;
+        background:white;
     }
     #aboutUsText {
         background: rgb(226, 218, 203);
         grid-area: at;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding:200px;
     }
     #aboutUsArticles {
         grid-area: aa;
@@ -160,8 +175,14 @@ margin: 10px;
         margin: 30px;
     }
     .AuArticle {
-        background:grey;
-        
+    background:#eeba59;
+        display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:10px;
+    }
+    .AuArticle:hover {
+        background:#e79a52;
     }
     /*other tags*/
 
@@ -184,4 +205,7 @@ margin: 10px;
         color: white;
         text-decoration: underline;
 
+    }
+    h4 {
+        font-size: 20px;
     }
