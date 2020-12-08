@@ -19,6 +19,7 @@ min-height: 200vh;
     " im im im im im "
     " im im im im im "
     " ft ft ft ft ft ";
+
     
 }
 /* strucure for Menu Page */
@@ -63,7 +64,8 @@ grid-template-columns: 3fr 1fr 1fr 1fr;
 grid-template-rows: 1fr;
 grid-template-areas: 
 " h1 h2 h3 h4";
-
+max-height: 100px;
+min-height: 90px;
 }
 
 .head1 {
@@ -128,7 +130,9 @@ grid-template-areas:
     /*menu Page*/
 #foodType {
         grid-area: mt;
-        background:rgb(209, 198, 177)
+        background:rgb(209, 198, 177);
+        display:flex;
+        justify-content: space-evenly;
     }
 
 #foodOptions {
@@ -149,6 +153,10 @@ grid-gap: 5px;
 margin: 10px;
 }
 
+.foodTypeOption:hover{
+    opacity: 0.5;
+    
+}
 
     /* about us page */
 
