@@ -8,7 +8,7 @@ body {
 }
 /* strucure for Main/News page */
 #mainPage {
-min-height: 200vh;
+min-height: 250vh;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 3fr 3fr 3fr 3fr 0.5fr;
@@ -24,7 +24,7 @@ min-height: 200vh;
 }
 /* strucure for Menu Page */
 #MenuPage {
-    min-height: 200vh;
+    min-height: 150vh;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 4fr 4fr 4fr 0.5fr;
@@ -102,6 +102,7 @@ min-height: 90px;
 #indexImg {
     background:white;
     grid-area:mi;
+    
 }
 
 #indexMain{
@@ -145,12 +146,17 @@ min-height: 90px;
     display:flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-content: flex-start;
 }
 
 .burger {
 background:white;
 grid-gap: 5px;
 margin: 10px;
+max-height: 400px;
+display: flex;
+margin-bottom: 20px;
+
 }
 
 .foodTypeOption:hover{
