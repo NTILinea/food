@@ -158,6 +158,10 @@ display: flex;
 margin-bottom: 20px;
 
 }
+.foodTypeOption{
+    height: 150px;
+    width: 150px;
+}
 
 .foodTypeOption:hover{
     opacity: 0.5;
